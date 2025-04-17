@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>I T Hunt Admin</title>
+  
+  <!-- CSS & Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/0.2.0/css/themify-icons.min.css">
+  
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Add a full-screen background video */
+    #video-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .container-scroller {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .auth-form-light {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      max-width: 450px;
+      width: 100%;
+    }
+
+    .brand-logo img {
+      width: 120px;
+      margin-bottom: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h4, h6 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      font-size: 26px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    h6 {
+      font-size: 16px;
+      color: #777;
+    }
+
+    .form-control {
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      margin-bottom: 20px;
+      font-size: 16px;
+      padding: 15px;
+    }
+
+    .form-control:focus {
+      border-color: #0072ff;
+      box-shadow: 0 0 5px rgba(0, 114, 255, 0.4);
+    }
+
+    .auth-form-btn {
+      background-color: #0072ff;
+      color: white;
+      font-weight: bold;
+      border-radius: 50px;
+      padding: 12px;
+      text-transform: uppercase;
+      width: 100%;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .auth-form-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .auth-form-btn.facebook-btn {
+      background-color: #3b5998;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .auth-form-btn.facebook-btn:hover {
+      background-color: #365499;
+    }
+
+    .auth-form-btn i {
+      margin-right: 10px;
+    }
+
+    .form-check-label {
+      font-size: 14px;
+      color: #777;
+    }
+
+    .auth-link {
+      font-size: 14px;
+      color: #0072ff;
+    }
+
+    .text-center.mt-4 a {
+      color: #0072ff;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      .auth-form-light {
+        padding: 30px;
+      }
+
+      .brand-logo img {
+        width: 100px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Background Video -->
+  <video id="video-background" autoplay loop muted>
+    <source src="C:\Users\abhishek prajapati\Desktop\adv.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="container-scroller">
+    <div class="content-wrapper d-flex align-items-center auth px-0">
+      <div class="row w-100 mx-0">
+        <div class="col-lg-4 mx-auto">
+          <div class="auth-form-light text-left py-5 px-4 px-sm-5">
+            <div class="brand-logo">
+              <img src="../../images/logo.svg" alt="logo">
+            </div>
+            <h4>New here?</h4>
+            <h6 class="font-weight-light">Signing up is easy. It only takes a few steps.</h6>
+            <form class="pt-3">
+              <div class="form-group">
+                <input type="text" class="form-control form-control-lg" id="exampleInputUsername1" placeholder="Username" required>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email" required>
+              </div>
+              <div class="form-group">
+                <select class="form-control form-control-lg" id="exampleFormControlSelect2">
+                  <option value="">Select Country</option>
+                  <option value="US">United States</option>
+                  <option value="UK">United Kingdom</option>
+                  <option value="IN">India</option>
+                  <option value="DE">Germany</option>
+                  <option value="AR">Argentina</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password" required>
+                <!-- Show/Hide Password Button -->
+                <input type="checkbox" id="showPassword" style="margin-top: 10px;">
+                <label for="showPassword" class="form-check-label">Show Password</label>
+              </div>
+              <div class="mb-4">
+                <div class="form-check">
+                  <label class="form-check-label text-muted">
+                    <input type="checkbox" class="form-check-input">
+                    I agree to all Terms & Conditions
+                  </label>
+                </div>
+              </div>
+              <div class="mt-3">
+                <button type="submit" class="btn btn-block auth-form-btn">SIGN UP</button>
+              </div>
+              <div class="text-center mt-4 font-weight-light">
+                Already have an account? <a href="login.html" class="text-primary">Login</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript to toggle password visibility -->
+  <script>
+    const showPasswordCheckbox = document.getElementById('showPassword');
+    const passwordField = document.getElementById('exampleInputPassword1');
+
+    showPasswordCheckbox.addEventListener('change', () => {
+      if (showPasswordCheckbox.checked) {
+        passwordField.type = 'text'; // Show password
+      } else {
+        passwordField.type = 'password'; // Hide password
+      }
+    });
+  </script>
+</body>
+
+</html>

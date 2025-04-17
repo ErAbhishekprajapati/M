@@ -293,6 +293,7 @@ section {
     pointer-events: none;
     max-width: 480px;
     max-height: 100vh;
+    
 }
 
 span {
@@ -307,7 +308,7 @@ span {
 }
 
 .about-img img {
-    width: 40vw;
+    width: 25vw;
 }
 
 .heading {
@@ -633,6 +634,7 @@ span {
 
     .home-img img {
         right: 0;
+        
     }
 }
 
@@ -968,7 +970,7 @@ h1 {
 
 }
 h3{
-    color:green;
+    color:rgb(0, 19, 128);
 }
 
 .form-group {

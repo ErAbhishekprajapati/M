@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Makar Sankranti</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background Gradient for Festive Feel */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #FFD700, #FF6347); /* Festive yellow to orange gradient */
+            color: #FFFFFF;
+            text-align: center;
+            padding: 0;
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative; /* For positioning images */
+        }
+
+        /* Flexbox container for centered content */
+        .container {
+            text-align: center;
+            z-index: 1;
+            position: relative;
+        }
+
+        /* Title Style with Rotating Effect */
+        .rotate-text {
+            font-size: 4rem;
+            color: #FFF;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            display: inline-block;
+            animation: rotateText 10s linear infinite; /* Rotate animation */
+        }
+
+        /* Description Style */
+        .message p {
+            font-size: 1.5rem;
+            color: #FFF;
+            margin-bottom: 40px;
+            animation: fadeIn 2s ease-in-out;
+            animation-delay: 1s;
+        }
+
+        /* Image container for the kite */
+        .image-container img {
+            width: 300px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+            animation: bounce 1.5s infinite alternate;
+        }
+
+        /* Hover effect for image */
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Positioning the images at top left and top right */
+        .image-left, .image-right {
+            position: absolute;
+            top: 20px;
+            width: 120px; /* Size of the image */
+            height: auto;
+        }
+
+        .image-left {
+            left: 20px;
+        }
+
+        .image-right {
+            right: 170px;
+        }
+
+        /* Rotating Text Animation */
+        @keyframes rotateText {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Adding the kite animation */
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-20px);
+            }
+        }
+
+        /* Adding a fade-in effect for text */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .rotate-text {
+                font-size: 2.5rem;
+            }
+
+            .message p {
+                font-size: 1.2rem;
+            }
+
+            .image-container img {
+                width: 200px;
+            }
+
+            .image-left, .image-right {
+                width: 100px; /* Smaller image size for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-left">
+        <img src="C:\Users\abhishek prajapati\Desktop\mk.JPG" alt="Kite flying left">
+    </div>
+    <div class="image-right">
+        <img src="C:\Users\abhishek prajapati\Desktop\mk.JPG" alt="Kite flying right">
+    </div>
+    <div class="container">
+        <div class="message">
+            <h1>Abhishek Developer</h1>
+            <h1>Happy Makar</h1>
+            <h1 class="rotate-text">Happy Makar Sankranti!</h1>
+            <p>Wishing you peace, prosperity, and happiness on this auspicious festival.</p>
+        </div>
+
+        <div class="image-container">
+            <img src="C:\Users\abhishek prajapati\Desktop\mk.JPG" alt="Kite flying">
+        </div>
+        <h1>Abhishek Developer</h1>
+        <h1>Sankranti!</h1>
+    </div>
+</body>
+</html>
